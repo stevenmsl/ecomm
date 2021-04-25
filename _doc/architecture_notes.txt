@@ -1,0 +1,20 @@
+- Microfrontends
+  - each smaller app is responsible for a distinct
+    feature of the product
+  - each smaller app will Not communicate with one
+    another directly
+  - multiple engineering teams can work in isolation
+  - each smaller app is easier to understand and
+    make changes to  
+
+- index.html
+  - the index.html in the container project is used
+    for both development and production
+  - the index.html in the products and car projects
+    is used for development purpose only
+- bootstrap.js
+  - need to consider the fact that container might not
+    have the element with the given id that products 
+    or cart need to render their app 
+  - the entry point from where the container will load
+    the code for each smaller app

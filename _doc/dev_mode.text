@@ -1,0 +1,6 @@
+- in a terminal change dir to products and run the following
+  - npm run start
+- open a new terminal change dir to cart and run the following
+  - npm run start
+- open a new terminal change dir to container and run the following
+  - npm run start

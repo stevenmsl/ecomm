@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <!-- 
+            - Extremely important is that the id can’t be the same
+              as one of the prefix used in the remotes section 
+              in the webpack.config.js 
+              "products@http://localhost:8081/remoteEntry.js",
+              "cart@http://localhost:8082/remoteEntry.js",
+            - so products and cart can't be used as the id of 
+              the element
+            - reason for this is that webpack will create
+              global variables called products and cart
+              to access the code it downloaded from remoteEntry
+            - if you use them as ids of a HTNM element that 
+              those global variables will be redefined as 
+              a HTML element, and this will cause errors 
+         -->
+        <div id="host-products"></div>
+        <div id="host-cart"></div>
+    </body>
+</html>
